@@ -7,7 +7,18 @@ const config: Config = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
     './src/slices/**/*.{js,ts,jsx,tsx,mdx}',
   ],
-  theme: {},
+  theme: {
+    extend: {
+      colors: {
+        primary: '#ff006e',
+        secondary: '#16bac5',
+        darkBg: '#1c2541',
+        woodCol: '#A63D40',
+        lightPink: '#EFE9F4',
+        green: '#386150',
+      },
+    },
+  },
   plugins: [],
 };
 export default config;
