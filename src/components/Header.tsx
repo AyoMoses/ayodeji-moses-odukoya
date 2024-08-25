@@ -1,6 +1,7 @@
 import React from 'react';
 import { createClient } from '@/prismicio';
 import Link from 'next/link';
+import { PrismicNextLink } from '@prismicio/next';
 
 export default async function Header() {
   const client = createClient();
@@ -14,6 +15,11 @@ export default async function Header() {
               {settings.data.name}
             </Link>
           </li>
+          {settings.data.nav_item.map(({ item_link, item_label }, index) => (
+            <li key={index}>
+              <PrismicNextLink field={item_link}>{item_label}</PrismicNextLink>
+            </li>
+          ))}
         </ul>
       </nav>
     </header>
