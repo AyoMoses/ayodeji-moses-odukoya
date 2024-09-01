@@ -53,6 +53,14 @@
             "constraint": {},
             "thumbnails": []
           }
+        },
+        "view_more_link": {
+          "type": "Link",
+          "config": {
+            "label": "View More Link",
+            "placeholder": "",
+            "select": null
+          }
         }
       },
       "items": {}

@@ -7,8 +7,7 @@ import Heading from "@/components/Heading";
 /**
  * Props for `BlogPostIndex`.
  */
-export type BlogPostIndexProps =
-  SliceComponentProps<Content.ContentIndexSlice>;
+export type BlogPostIndexProps = SliceComponentProps<Content.ContentIndexSlice>;
 
 /**
  * Component for "BlogPostIndex" Slices.
@@ -17,10 +16,10 @@ const BlogPostIndex = async ({
   slice,
 }: BlogPostIndexProps): Promise<JSX.Element> => {
   const client = createClient();
-  const blogPosts = await client.getAllByType('blog_post');
-  const projects = await client.getAllByType('project');
+  const blogPosts = await client.getAllByType("blog_post");
+  const projects = await client.getAllByType("project");
 
-  const items = slice.primary.content_type === 'Blog' ? blogPosts : projects;
+  const items = slice.primary.content_type === "Blog" ? blogPosts : projects;
 
   return (
     <Bounded
