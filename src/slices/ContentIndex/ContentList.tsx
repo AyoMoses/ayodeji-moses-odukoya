@@ -160,6 +160,7 @@ export default function ContentList({
                     ) ?? "#")
                   : "#"
               }
+              target='_blank'
               className="flex flex-col justify-between border-t border-t-slate-100 py-10 text-slate-200 md:flex-row"
               aria-label={post.data.title || ""}
             >
