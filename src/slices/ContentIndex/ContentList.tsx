@@ -165,16 +165,16 @@ export default function ContentList({
               aria-label={post.data.title || ""}
             >
               <div className="flex flex-col">
-                <span className="text-3xl font-bold">{post.data.title}</span>
-                <div className="flex gap-3 text-secondary">
+                <span className="text-3xl font-bold mb-2">{post.data.title}</span>
+                <div className="flex gap-2 md:gap-3 text-secondary w-fit flex-wrap">
                   {post.tags.map((tag, index) => (
-                    <span key={index} className="text-lg font-bold">
+                    <span key={index} className="text-lg font-bold leading-none">
                       {tag}
                     </span>
                   ))}
                 </div>
               </div>
-              <span className="ml-auto flex items-center gap-2 text-xl font-medium md:ml-0">
+              <span className="flex items-center gap-2 text-xl font-medium md:ml-0 self-end mt-3 md:mt-0">
                 {viewMoreText} <MdArrowOutward />
               </span>
             </PrismicLink>
