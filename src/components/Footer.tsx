@@ -80,6 +80,8 @@ export default async function Footer() {
               field={settings.data.linkedin_link}
               className='p-2 text-2xl text-slate-300 transition-all duration-150 hover:scale-125 hover:text-secondary'
               aria-label={settings.data.name + ' on LinkedIn'}
+              target='_blank'
+              rel='noopener noreferrer'
             >
               <FaLinkedin />
             </PrismicNextLink>
